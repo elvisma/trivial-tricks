@@ -1,0 +1,6 @@
+from sklearn.preprocessing import StandardScaler
+
+X=df.values[:,1:]    ## change DF to ndarray
+X=np.nan_to_num(X)     ## changet Null Values
+cluster_dataset=StandardScaler().fit_transform(X)
+cluster_dataset
